@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <title>MR - Cab Service</title>
+
+    <!-- styling links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Includes/css/main.css">
+    <link rel="stylesheet" href="./Includes/lib/slick.css">
+</head>
+<body>
+
+    <div class="hero-section inner-page-hero-sec">
+        <div class="bgimg-section inner-bgimg">
+            <!-- <div class="container-fluid"> -->
+                <div class="inner-navigation-bar">
+                    <nav class="navbar navbar-black">
+                        <div class="navbar-container">
+                            <div class="logo-img-div">
+                                <img src="./Images/Logo.png" alt="">
+                            </div>
+                            <div class="hamburger-menu">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                            <div class="nav-links">
+                                <ul class="nav-items">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Get Taxi</a></li>
+                                    <li><a href="#">Become a Driver</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Our Blog</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul> 
+                            </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+            <!-- </div> -->
+            <div class="hero-body center">
+                <div class="breadcrumb-div">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li>Get Taxi</li>
+                      </ul> 
+                </div>
+                <div class="hero-heading">
+                    <div>GET A TAXI</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container get-taxi-text-div">
+        <div class="text-content-div pb-4">
+            <div class="div-title pb-3">
+                Our operators are waiting for your call:
+            </div>
+            <div class="div-tel-num pb-3">
+                +94 11 2 015 506
+            </div>
+            <div class="div-text pb-3">
+                YOU CAN BOOK YOUR TAXI ONLINE
+            </div>
+        </div>
+        <div class="get-taxi-form-content py-5">
+            <form action="">
+                <div class="form-row py-3">
+                    <div class="vehicle-types-div px-1">
+                        <div class="vehicle-type">
+                            <img src="./Images/standard-icon.png" alt="">
+                            <div class="type-name">Standard</div>
+                        </div>
+                        <div class="vehicle-type">
+                            <img src="./Images/business-icon.png" alt="">
+                            <div class="type-name">Business</div>
+                        </div>
+                        <div class="vehicle-type">
+                            <img src="./Images/vip-icon.png" alt="">
+                            <div class="type-name">VIP</div>
+                        </div>
+                        <div class="vehicle-type">
+                            <img src="./Images/mini-van-icon.png" alt="">
+                            <div class="type-name">Mini-Van</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row py-md-3">
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" placeholder="From">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" placeholder="To">
+                    </div>
+                </div>
+                <div class="form-row py-md-3">
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" placeholder="Date">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="form-row py-3">
+                    <div class="form-group col-12 text-center">
+                      <input type="submit" class="btn secondary-button-inverse" value="GET A TAXI">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="inner-page-vehicle-types-section py-4">
+        <div class="container">
+            <div class="section-titles-div py-4">
+                <div class="section-sub-title">SEE OUR</div>
+                <div class="section-title">TARIFFS</div>
+            </div>
+            <div class="section-body py-4">
+                <div class="card-slider">
+                    <div class="card car-card">
+                        <img class="card-img-top car-img" src="./Images/standard.png" alt="..">
+                        <div class="card-body">
+                            <h5 class="card-title service-title">STANDARD</h5>
+                            <div class="card-text service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <h5 class="card-title car-price mb-0 pt-4">$2 <span>per</span>KM</h5>
+                        </div>
+                    </div>
+                    <div class="card car-card">
+                        <img class="card-img-top car-img" src="./Images/business.png" alt="..">
+                        <div class="card-body">
+                            <h5 class="card-title service-title">BUSINESS</h5>
+                            <div class="card-text service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <h5 class="card-title car-price mb-0 pt-4">$3 <span>per</span>KM</h5>
+                        </div>
+                    </div>
+                    <div class="card car-card">
+                        <img class="card-img-top car-img" src="./Images/vip.png" alt="..">
+                        <div class="card-body">
+                            <h5 class="card-title service-title">VIP</h5>
+                            <div class="card-text service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <h5 class="card-title car-price mb-0 pt-4">$5 <span>per</span>KM</h5>
+                        </div>
+                    </div>
+                    <div class="card car-card">
+                        <img class="card-img-top car-img" src="./Images/mini-van.png" alt="..">
+                        <div class="card-body">
+                            <h5 class="card-title service-title">MINI-VAN</h5>
+                            <div class="card-text service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <h5 class="card-title car-price mb-0 pt-4">$4 <span>per</span>KM</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-with-yellow-background">
+        <div class="container">
+            <h1>Your reliable partner for seamless and comfortable transportation experiences.</h1>
+        </div>
+    </div>
+    <footer class="footer pt-4">
+        <div class="footer-top d-flex py-5">
+            <div class="footer-top-col-1">
+                <div class="footer-col-title pb-4">
+                    <h2>ABOUT US</h2>
+                </div>
+                <div class="footer-col-description pb-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna elit, dapibus sed nibh ut, egestas commodo magna. Quisque vitae sagittis metus.</p>
+                </div>
+                <div class="footer-col-contacts pb-4">
+                    <div class="address-div">
+                        <div class="icon"><img src="./Images/location1.png" alt=""></div>
+                        <div class="text-span">43 2-nd Avenue, New York, NY 29004-7153</div>
+                    </div>
+                    <div class="email-div">
+                        <div class="icon"><img src="./Images/email.png" alt=""></div>
+                        <div class="text-span">mrtours.info@gmail.com</div>
+                    </div>
+                    <div class="phone-div">
+                        <div class="icon"><img src="./Images/phone.png" alt=""></div>
+                        <div class="text-span">+94 11 2 201 5 506</div>
+                    </div>
+                </div>
+                <div class="footer-col-social-media">
+                    <div class="facebook">
+                        <img src="./Images/facebook.png" alt="">
+                    </div>
+                    <div class="whatsapp">
+                        <img src="./Images/whatsapp.png" alt="">
+                    </div>
+                    <div class="insta">
+                        <img src="./Images/instagram.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-top-col-2">
+                <div class="footer-col-title pb-4">
+                    <h2>EXPLORE</h2>
+                </div>
+                <div class="footer-col-links">
+                    <ul class="footer-links">
+                        <li><a href="#">Get Taxi</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Tariffs</a></li>
+                        <li><a href="#">Become a Driver</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-top-col-3">
+                <div class="footer-col-title pb-4">
+                    <h2>CONTACT US</h2>
+                </div>
+                <div class="footer-col-form">
+                    <form class="footer-form" action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <input class="btn secondary-button" type="button" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-4">
+            <p>Copyright © 2023 All rights reserved<span> M R Tours</span> | Designed & Developed by <span>JH Creations</span></p>
+        </div>
+    </footer>
+    
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+     <!-- Importing datepicker cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="./Includes/lib/slick.min.js"></script>
+    <script src="./Includes/lib/main.js"></script>
+    <script>
+
+        var $links = $('.vehicle-type');
+            $links.click(function(){
+            $links.removeClass('selected');
+            $(this).addClass('selected');
+        });
+
+    </script>
+    
+</body>
+</html>

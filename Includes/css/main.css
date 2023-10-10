@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:wght@100;300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+    /* overflow-x: hidden; */
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.clear {
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: .01em;
+}
+
+.selected {
+    background: #fff;
+    border: none;
+    color: #820707;
+    border-radius: 15px;
+}
+
+.primary-button {
+    background: #FDB813;
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+}
+
+.secondary-button {
+    background: #FDB813;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+
+.secondary-button-inverse {
+    background: #111;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+
+.secondary-button:hover,
+.primary-button:hover {
+    background: #fff;
+    border: 1px solid #FDB813;
+    color: #FDB813;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* display: block; */
+}
+
+.service-page-service-bgimg {
+    position: relative;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../../Images/taxi-driver.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section .bgimg-section {
+    position: relative;
+    height: 60%;
+    background-image: url(../../Images/Hero_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-section .title-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding-top: 10px;
+}
+
+.title-bar i, .hamburger-menu i {
+    color: #FDB813;
+    font-size: 50px;
+    display: none;
+}
+
+.hero-section .bgcolor-section {
+    position: relative;
+    height: 40%;
+    background: #FDB813;
+}
+
+.navigation-bar, .inner-navigation-bar {
+    width: 100%;
+}
+
+.navbar-trans{
+    background: transparent;
+    color: #fff;
+}
+
+.navbar-black{
+    background: #000;
+    color: #fff;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 18px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-items li a:hover {
+    color: #FDB813;
+    font-weight: 700;
+}
+
+.title-div .title {
+    color: #FDB813;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-div .form-input {
+    max-width: 210px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.form-div .input-boxes {
+    display: flex;
+    justify-content: center;
+}
+
+span img {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 20%;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+span img:hover {
+    opacity: 1;
+}
+
+span img#sedan {
+    position: absolute;
+    top: 0;
+}
+
+.form-action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .hero-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+} */
+
+.bgcolor-section .hero-img {
+    position: absolute;
+    top: -40%;
+    left: 20%;
+    margin-left: -20px;
+    margin-top: -40px;
+    /* display: flex; */
+}
+
+.hero-img img {  
+    max-width: 800px;
+    width: 100%;
+}
+
+.section-titles-div .section-sub-title {
+    font-size: 25px;
+    color: #111;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-titles-div .section-sub-title-inverse {
+    font-size: 25px;
+    color: #FDB813;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-titles-div .section-title {
+    font-size: 50px;
+    color: #FDB813;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-titles-div .section-title-inverse {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.our-services-section {
+    background: #F7F7F7;
+}
+
+.text-content-div p {
+    font-size: 22px;
+}
+
+.card-slider {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-slider .service-card {
+    height: auto;
+    background: #FFFFFF;
+    border: 1px dashed #000; 
+    box-shadow: 0px 1px 10px 4px rgba(142, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 0 20px 0;
+    padding: 20px 10px;
+}
+
+.service-card .card-img-cls {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.service-card .service-title,
+.service-card .service-text,
+.car-card .service-title,
+.car-card .service-text {
+    text-align: center;
+}
+
+.service-card .service-title,
+.car-card .service-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.text-with-yellow-background {
+    background-color: #FDB813;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.text-with-yellow-background h1 {
+    font-weight: 700;
+}
+
+.car-img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.car-price {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.car-price span {
+    font-size: 20px;
+}
+
+.card-slider .car-card {
+    height: auto;
+    background: #FFFFFF;
+    border: 1px dashed #000; 
+    box-shadow: 0px 1px 10px 4px rgba(142, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 0 20px 0;
+    padding: 10px 10px;
+}
+
+.car-card:nth-child(3) {
+    border: 3px solid #FDB813; 
+}
+
+.cab-driver-section {
+    background-color: #F7F7F7;
+}
+
+.cab-driver-section .section-titles-div .section-sub-title,
+.cab-driver-section .section-titles-div .section-title {
+    text-align: left;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.list-content .benefit-list{
+    list-style-type: none;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+}
+
+.benefit-list li {
+    padding-bottom: 15px;
+    font-weight: 700;
+    color: #000;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.benefit-list li::before {
+    content: url(../../Images/arrow.png);
+    position: absolute;
+    left: -8px;
+    top: 0.5px;
+}
+
+.customer-feedback-section {
+    margin-bottom: 80px;
+}
+
+.slick-card-slider .card {
+    margin-right: 10px;
+    background: #F7F7F7;
+}
+
+.slick-card-slider {
+    position: relative;
+}
+
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FDB813;
+    border-radius: 20px;
+    text-align: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fdb813;
+}
+
+.prev-arrow {
+    bottom: -15%;
+    left: 45%;
+}
+
+.next-arrow {
+    bottom: -15%;
+    right: 45%;
+}
+
+.footer {
+    background-color: #131313;
+    width: 100%;
+    display: block;
+}
+
+.footer .footer-top {
+    width: 100%;
+    padding: 50px 100px !important;
+    justify-content: center;
+}
+
+.footer .footer-bottom {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-bottom span {
+    color: #FDB813;
+}
+
+.footer-top .footer-top-col-1 {
+    width: 30%;
+    color: #fff;
+}
+
+.footer-col-description p {
+    line-height: 30px;
+}
+
+.footer-col-contacts .address-div,
+.footer-col-contacts .email-div,
+.footer-col-contacts .phone-div {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.address-div .icon,
+.email-div .icon,
+.phone-div .icon {
+    padding-right: 10px;
+}
+
+.footer-top-col-1 .footer-col-social-media {
+    display: flex;
+}
+
+.footer-col-social-media div {
+    padding-right: 20px;
+}
+
+.footer-col-title h2 {
+    font-weight: 700;
+    color: #FDB813;
+}
+
+.footer-top .footer-top-col-2 {
+    width: 30%;
+    padding-left: 80px;
+}
+
+.footer-col-links .footer-links {
+    list-style-type: none;
+}
+
+.footer-links li {
+    padding-bottom: 20px;
+}
+
+.footer-links li:hover {
+    color: #FDB813;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-top .footer-top-col-3 {
+    width: 40%;
+}
+
+.footer-col-form {
+    padding: 40px 30px;
+    background: rgba(217, 217, 217, 0.20);
+    border-radius: 15px;
+}
+
+.footer-form .form-control {
+    border: 2px solid #FDB813 !important;
+}
+
+.slick-track {
+    display: flex !important;
+}
+.eq-height {
+    height: 150px;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+}
+
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom {
+    padding: 30px;
+}
+
+/* get taxi page */
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.inner-page-hero-sec {
+    height: 60vh;
+}
+.inner-bgimg {
+    height: 100% !important;
+}
+ul.breadcrumb {
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+    margin-bottom: 0;
+    justify-content: center;        
+}
+ul.breadcrumb li {
+    display: inline;
+    /* font-size: 18px; */
+    color: #FDB813;
+    font-size: 25px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #fff;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #fff;
+    text-decoration: none;
+}
+.hero-heading div {
+    font-size: 60px;
+    color: #FDB813;
+    font-weight: 700;
+}
+.get-taxi-text-div {
+    padding: 70px 0;
+}
+.get-taxi-text-div .div-title {
+    color: #FDB813;
+    font-size: 45px;
+}
+.get-taxi-text-div .div-tel-num {
+    font-size: 50px;
+}
+.get-taxi-text-div .div-text {
+    font-size: 35px;
+}
+.get-taxi-text-div .div-title,
+.get-taxi-text-div .div-tel-num,
+.get-taxi-text-div .div-text {
+    text-align: center;
+    font-weight: 700;
+}
+
+.get-taxi-text-div .get-taxi-form-content {
+    width: 80%;
+    margin: 0 auto;
+    background: #FDB813;
+    padding: 0 20px;
+}
+
+.get-taxi-form-content .vehicle-types-div {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.vehicle-types-div .vehicle-type {
+    padding: 30px;
+    display: block;
+    text-align: center;
+}
+
+.vehicle-types-div .type-name {
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.inner-page-vehicle-types-section {
+    background: #F7F7F7;
+}
+
+/* services page */
+
+.section-text-para {
+    text-align: center;
+}
+.section-text-para p {
+    font-size: 20px;
+}
+
+/* media queries */
+
+@media(max-width: 1440px) {
+    .bgcolor-section .hero-img {
+        position: absolute;
+        top: -20%;
+        left: 30%;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+    .hero-img img {
+        max-width: 650px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .prev-arrow {
+        bottom: -15%;
+        left: 42%;
+    }
+    
+    .next-arrow {
+        bottom: -15%;
+        right: 42%;
+    }
+    .footer-top .footer-top-col-2 {
+        padding-left: 50px;
+    }
+}
+
+@media(max-width: 991px) {
+    .bgimg-section .title-bar{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    .title-bar i, .hamburger-menu i {
+        display: block;
+        cursor: pointer;
+    }
+    .navigation-bar {
+        display: none;
+    }
+    .hero-section .bgimg-section {
+        height: 100%;
+    }
+    .hero-section-body {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    .form-div .input-boxes {
+        display: block;
+    }
+    .form-div .form-input {
+        max-width: 100%;
+        padding: 12px 20px;
+    }
+    .input-boxes span {
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .hero-section .bgcolor-section {
+        display: none;
+    }
+    .hero-img {
+        display: none;
+    }
+    .card-slider {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hide-col {
+        display: none;
+    }
+    .footer-top {
+        display: block !important;
+    }
+    .footer-top .footer-top-col-1,
+    .footer-top .footer-top-col-2,
+    .footer-top .footer-top-col-3 {
+        width: 100%;
+    }
+    .footer-top .footer-top-col-1 {
+        padding-bottom: 50px;
+    }
+    .footer-top .footer-top-col-2 {
+        padding-left: 0;
+    }
+
+    .navbar-container .nav-links {
+        display: none;
+    }
+    .get-taxi-form-content .vehicle-types-div {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .card-slider {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .prev-arrow {
+        bottom: -15%;
+        left: 40%;
+    }
+    .next-arrow {
+        bottom: -15%;
+        right: 40%;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-titles-div .section-sub-title {
+        font-size: 20px;
+    }
+    .section-titles-div .section-title {
+        font-size: 35px;
+    }
+    .card-slider {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .list-content .benefit-list{
+        list-style-type: none;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+        list-style-position: inside;
+    }
+    .prev-arrow,
+    .next-arrow {
+        display: none !important;
+    }
+    .footer .footer-top {
+        padding: 50px !important;
+    }
+    .hero-heading div {
+        font-size: 40px;
+    }
+    .vehicle-types-div .vehicle-type {
+        padding: 20px 0;
+    }
+    .hero-body {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(10%, -50%);
+    }
+    .hero-heading {
+        text-align: center;
+    }
+    ul.breadcrumb li {
+        font-size: 18px !important;
+    }
+    .get-taxi-text-div .div-title {
+        color: #FDB813;
+        font-size: 30px;
+    }
+    .get-taxi-text-div .div-tel-num {
+        font-size: 40px;
+    }
+    .get-taxi-text-div .div-text {
+        font-size: 20px;
+    }
+}
